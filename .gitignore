@@ -1,0 +1,34 @@
+.vscode
+.env
+
+# Ignore Mac DS_Store files
+.DS_Store
+
+# Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyz
+draft_main.py
+
+# Egg files
+*.egg-info/
+*.egg
+
+# Virtual environments
+env/
+venv/
+
+# Log files
+*.log
+
+# image files
+*.png
+*.jpg
+*.svg
+
+# kubernetes configurations
+k8s/
+
+# notebooks
+mockup-notebooks/
