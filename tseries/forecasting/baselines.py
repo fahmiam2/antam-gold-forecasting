@@ -33,3 +33,7 @@ class NaiveMovingAverage(LocalForecastingModel):
             forecast[i] = f
             history = np.append(history, [f])
         return self._build_forecast_series(forecast)
+    
+    @property
+    def supports_multivariate(self) -> bool:
+        return False

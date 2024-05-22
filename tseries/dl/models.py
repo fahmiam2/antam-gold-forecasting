@@ -10,7 +10,7 @@ import torch.nn as nn
 import torchmetrics
 from omegaconf import DictConfig, OmegaConf
 
-from src.dl.attention import (
+from tseries.dl.attention import (
     AdditiveAttention,
     ConcatAttention,
     DotProductAttention,

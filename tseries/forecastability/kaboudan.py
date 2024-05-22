@@ -4,7 +4,7 @@ import warnings
 import numpy as np
 from darts import TimeSeries
 
-from src.utils.ts_utils import _remove_nan_union
+from tseries.utils.ts_utils import _remove_nan_union
 
 
 def sse(y_true: np.ndarray, y_pred: np.ndarray):

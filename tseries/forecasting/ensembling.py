@@ -9,7 +9,7 @@ import pandas as pd
 from scipy import optimize
 from tqdm.autonotebook import tqdm
 
-from src.utils import ts_utils
+from tseries.utils import ts_utils
 
 
 def calculate_diversity(

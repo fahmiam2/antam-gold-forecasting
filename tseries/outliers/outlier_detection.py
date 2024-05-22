@@ -5,7 +5,7 @@ import scipy.stats as stats
 from sklearn.ensemble import IsolationForest
 from sklearn.svm import OneClassSVM
 from sklearn.preprocessing import StandardScaler
-from src.decomposition.seasonal import BaseDecomposition
+from tseries.decomposition.seasonal import BaseDecomposition
 
 
 def detect_outlier_sd(ts, sd_multiple=2):

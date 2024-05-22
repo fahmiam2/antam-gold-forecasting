@@ -6,8 +6,8 @@ import torch
 import torch.nn as nn
 from pytorch_forecasting.models import BaseModel
 
-from src.dl.autoformer import AutoFormer
-from src.dl.informer import Informer
+from tseries.dl.autoformer import AutoFormer
+from tseries.dl.informer import Informer
 
 
 class SingleStepRNN(nn.Module, metaclass=ABCMeta):

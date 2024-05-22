@@ -8,7 +8,7 @@ import pandas as pd
 from numba import njit
 from scipy.signal import periodogram
 
-from src.utils.ts_utils import make_stationary
+from tseries.utils.ts_utils import make_stationary
 
 
 @np.vectorize

@@ -9,8 +9,8 @@ from darts.metrics import mae, mase, mse
 from sklearn.base import BaseEstimator, clone
 from sklearn.preprocessing import StandardScaler
 
-from src.utils.general import difference_list, intersect_list
-from src.utils.ts_utils import darts_metrics_adapter, forecast_bias
+from tseries.utils.general import difference_list, intersect_list
+from tseries.utils.ts_utils import darts_metrics_adapter, forecast_bias
 
 # from category_encoders import OneHotEncoder
 
@@ -223,7 +223,7 @@ class MLForecast:
             feature_config (FeatureConfig): Instance of the FeatureConfig object defining the features
             missing_config (MissingValueConfig, optional): Instance of the MissingValueConfig object
                 defining how to fill missing values. Defaults to None.
-            target_transformer (object, optional): Instance of target transformers from src.transforms.
+            target_transformer (object, optional): Instance of target transformers from tseries.transforms.
                 Should support `fit`, `transform`, and `inverse_transform`. It should also
                 return `pd.Series` with datetime index to work without an error. Defaults to None.
         """

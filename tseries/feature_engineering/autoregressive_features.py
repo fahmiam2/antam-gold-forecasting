@@ -10,7 +10,7 @@ from window_ops.rolling import (
     seasonal_rolling_std,
 )
 
-from src.utils.data_utils import _get_32_bit_dtype
+from tseries.utils.data_utils import _get_32_bit_dtype
 
 ALLOWED_AGG_FUNCS = ["mean", "max", "min", "std"]
 SEASONAL_ROLLING_MAP = {

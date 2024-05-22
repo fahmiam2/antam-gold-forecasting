@@ -12,7 +12,7 @@ from collections import namedtuple
 from scipy.signal import argrelmax
 from scipy.stats import norm
 import scipy.stats as stats
-# from src.transforms.target_transformations import AdditiveDifferencingTransformer, MultiplicativeDifferencingTransformer, LogTransformer, BoxCoxTransformer, YeoJohnsonTransformer, DetrendingTransformer
+# from tseries.transforms.target_transformations import AdditiveDifferencingTransformer, MultiplicativeDifferencingTransformer, LogTransformer, BoxCoxTransformer, YeoJohnsonTransformer, DetrendingTransformer
 import statsmodels.api as sm
 from statsmodels.stats.diagnostic import het_white
 from statsmodels.tsa.stattools import acf

@@ -1,6 +1,6 @@
 import numpy as np
 from functools import partial
-from src.decomposition.seasonal import _detrend
+from tseries.decomposition.seasonal import _detrend
 
 def make_stationary(x: np.ndarray, method: str="detrend", detrend_kwargs:dict={}):
     """Utility to make time series stationary
@@ -27,7 +27,7 @@ from darts import TimeSeries
 from darts.metrics.metrics import _get_values_or_raise
 from darts.metrics import metrics as dart_metrics
 from typing import Optional, Tuple, Union, Sequence, Callable, cast
-from src.utils.data_utils import is_datetime_dtypes
+from tseries.utils.data_utils import is_datetime_dtypes
 import pandas as pd
 
 def _remove_nan_union(array_a: np.ndarray,
