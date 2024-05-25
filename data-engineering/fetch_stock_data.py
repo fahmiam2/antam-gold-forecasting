@@ -33,11 +33,12 @@ class StockDataFetcher:
 ticker_symbols = {
     "^GSPC": "S&P 500 Index", 
     "^IXIC": "NASDAQ Composite Index",
-    "USDIDR=X": "USD to IDR Exchange Rate"
+    "USDIDR=X": "USD to IDR Exchange Rate",
+    "GC=F": "Global Gold Price"
 }
 
 start_date: str = "2010-01-04"
-end_date: str = "2024-04-30"
+end_date: str = "2024-05-01"
 
 # Instantiate StockDataFetcher and fetch/export data
 stock_data_fetcher = StockDataFetcher(ticker_symbols, start_date, end_date)
